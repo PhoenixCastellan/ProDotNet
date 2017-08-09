@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DelegateAndEvent.Delegate;
+using DelegateAndEvent.Event;
 
 namespace DelegateAndEvent
 {
@@ -14,9 +16,31 @@ namespace DelegateAndEvent
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            TestEvent();
+            TestDelegate();
+            Console.Read();
+        }
+
+        static void TestEvent()
+        {
+            var page = new MyPage();
+        }
+
+        static void TestDelegate()
+        {
+            var md = new MyDelegate();
+            md.SaySomeThing = new SaySomeThing(SayChinese);
+            md.SaySomeThing += SayEnglish;
+            md.SaySomeThing("hello world!");
+        }
+
+        static void SayChinese(string word)
+        {
+            Console.WriteLine($@"A chinese say {word}");
+        }
+        static void SayEnglish(string word)
+        {
+            Console.WriteLine($@"A en say {word}");
         }
     }
 }
