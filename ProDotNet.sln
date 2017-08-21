@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateAndEvent", "Delegat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{D37EA52C-FD57-4D07-809B-3463AE634631}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspxPageLifeCycle", "AspxPageLifeCycle\AspxPageLifeCycle.csproj", "{6E668F4D-AA9A-450D-B8A1-D3328B3BE2FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D37EA52C-FD57-4D07-809B-3463AE634631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D37EA52C-FD57-4D07-809B-3463AE634631}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D37EA52C-FD57-4D07-809B-3463AE634631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E668F4D-AA9A-450D-B8A1-D3328B3BE2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E668F4D-AA9A-450D-B8A1-D3328B3BE2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E668F4D-AA9A-450D-B8A1-D3328B3BE2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E668F4D-AA9A-450D-B8A1-D3328B3BE2FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
