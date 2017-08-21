@@ -4,8 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LanguageFeatures.InheritanceAndOverloading
+/*
+ * override(重写)：
+ *  1   一定与父类的virtual匹配，如果父类函数没有virtual，则子类使用override会报错
+ *  2   子类重写的函数签名、保护级别与父类同。    
+ * new(投影)：
+ *  1   子类与父类的关系很弱，返回值、参数、保护级别都可以不同；
+ *  2   子类自身只需要满足重载的规则即可。
+ */
+
+
+namespace LanguageFeatures.InheritanceAndOverloading.OveriideAndNew
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class Parent
     {
         public virtual Parent foo()
@@ -49,6 +62,7 @@ namespace LanguageFeatures.InheritanceAndOverloading
     /// <summary>
     /// 从下面的可以看出
     /// new可以做任意重载只要保证满足重载规则即可，父类该函数的签名及保护级别对子类没有任何约束
+    /// new可以用在不是父类中方法
     /// </summary>
     class ChildUseNew : Parent
     {
@@ -63,6 +77,11 @@ namespace LanguageFeatures.InheritanceAndOverloading
             return this;
         }
         public new void foo(int a, int b)
+        {
+            System.Console.WriteLine("Child.foo() with different return");
+        }
+
+        public new void xyz()
         {
             System.Console.WriteLine("Child.foo() with different return");
         }
