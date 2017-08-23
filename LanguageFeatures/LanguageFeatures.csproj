@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GcAndDispose\ResourceHolder.cs" />
     <Compile Include="Indexer\Indexer.cs" />
     <Compile Include="InheritanceAndOverloading\AboutAbstract.cs" />
     <Compile Include="InheritanceAndOverloading\OveriideAndNew.cs" />
@@ -51,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GcAndDispose\Dispose·finalize·GC·析构函数区别.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LanguageFeatures.GcAndDispose;
 using LanguageFeatures.Indexer;
 
 namespace LanguageFeatures
@@ -16,6 +17,8 @@ namespace LanguageFeatures
             Console.WriteLine(TestIndexer.UseIndexerByObject());
             Console.WriteLine(TestIndexer.UseIndexerByMultiParam());
 
+            TestResourceHolder.Test("GcAndDispose\\Dispose·finalize·GC·析构函数区别.txt");
+            //TestResourceHolder.TestByUseUsing("GcAndDispose\\Dispose·finalize·GC·析构函数区别.txt");
             Console.ReadKey();
         }
     }
