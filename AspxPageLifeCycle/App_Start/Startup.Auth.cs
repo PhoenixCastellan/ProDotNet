@@ -8,6 +8,7 @@ using Microsoft.Owin.Security.DataProtection;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using AspxPageLifeCycle.Models;
+using Microsoft.Owin.Security.OAuth;
 
 namespace AspxPageLifeCycle
 {
@@ -45,6 +46,10 @@ namespace AspxPageLifeCycle
             // 选中此选项后，登录过程中执行的第二个验证步骤将保存到你登录时所在的设备上。
             // 此选项类似于在登录时提供的“记住我”选项。
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
+
+            //var oauth = new OAuthAuthorizationServerOptions();
+            
+            //app.UseOAuthAuthorizationServer(new OAuthAuthorizationServerOptions());
 
             // 取消注释以下行可允许使用第三方登录提供程序登录
             //app.UseMicrosoftAccountAuthentication(

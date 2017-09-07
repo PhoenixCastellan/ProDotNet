@@ -47,6 +47,7 @@
     <Compile Include="Indexer\Indexer.cs" />
     <Compile Include="InheritanceAndOverloading\AboutAbstract.cs" />
     <Compile Include="InheritanceAndOverloading\OveriideAndNew.cs" />
+    <Compile Include="Lock\DeadLock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
