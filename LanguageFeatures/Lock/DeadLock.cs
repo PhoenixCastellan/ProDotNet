@@ -16,6 +16,7 @@ namespace LanguageFeatures.Lock
                 if (i > 10)
                 {
                     Console.WriteLine(i--);
+
                     DeadLockTest(i);
                 }
             }
