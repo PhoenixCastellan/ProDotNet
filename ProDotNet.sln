@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07ConstantsAndFields", "07C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstantsAndFields", "07ConstantsAndFields\ConstantsAndFields\ConstantsAndFields.csproj", "{B27A165B-DC51-4FAD-87E2-F45113FC5549}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08Methods", "08Methods", "{E41F59DB-1A56-4FE0-9EF9-0C1CC33D99C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloadMethods", "08Methods\OperatorOverloadMethods\OperatorOverloadMethods.csproj", "{8693E79D-4355-4056-B189-C43D484D0A98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{B27A165B-DC51-4FAD-87E2-F45113FC5549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B27A165B-DC51-4FAD-87E2-F45113FC5549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B27A165B-DC51-4FAD-87E2-F45113FC5549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8693E79D-4355-4056-B189-C43D484D0A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8693E79D-4355-4056-B189-C43D484D0A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8693E79D-4355-4056-B189-C43D484D0A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8693E79D-4355-4056-B189-C43D484D0A98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5447B4F6-C70E-41D1-8102-7795304E120B} = {24C24367-34C7-43FA-9817-79047E3A3138}
 		{B27A165B-DC51-4FAD-87E2-F45113FC5549} = {83BC0B55-7664-4FFF-A00A-51F79D131144}
+		{8693E79D-4355-4056-B189-C43D484D0A98} = {E41F59DB-1A56-4FE0-9EF9-0C1CC33D99C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FEECB03-FBD7-4250-9034-B478760F159F}
