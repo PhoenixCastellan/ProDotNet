@@ -40,6 +40,7 @@
             this.testButton.Text = "按钮";
             this.testButton.UseVisualStyleBackColor = true;
             this.testButton.Click += new System.EventHandler(this.testButton_Click);
+            this.testButton.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.testButton_KeyPress);
             // 
             // Form1
             // 

@@ -21,5 +21,10 @@ namespace WinForm
         {
 
         }
+
+        private void testButton_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }
